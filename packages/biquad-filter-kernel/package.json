@@ -1,0 +1,34 @@
+{
+  "name": "biquad-filter-kernel",
+  "description": "biquad filter kernel that use simple coefficients",
+  "version": "0.0.0",
+  "author": "Nao Yonamine <mohayonao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mohayonao/biquad-filter-kernel/issues"
+  },
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "mocha": "^3.0.2"
+  },
+  "files": [
+    "README.md",
+    "package.json",
+    "lib"
+  ],
+  "homepage": "https://github.com/mohayonao/biquad-filter-kernel/",
+  "keywords": [
+    "biquad",
+    "dsp",
+    "filter"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohayonao/biquad-filter-kernel.git"
+  },
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "mocha"
+  }
+}
