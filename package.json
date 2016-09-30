@@ -1,0 +1,28 @@
+{
+  "name": "biquad-filter-kernel",
+  "description": "collection of biquad filter kernel",
+  "version": "0.0.0",
+  "author": "Nao Yonamine <mohayonao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mohayonao/biquad-filter-kernel/issues"
+  },
+  "devDependencies": {
+    "lerna": "2.0.0-beta.28",
+    "npm-run-all": "^3.1.0"
+  },
+  "homepage": "https://mohayonao.github.io/biquad-filter-kernel/",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohayonao/biquad-filter-kernel.git"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "rm -rf lerna-debug.log npm-debug.log",
+    "lint": "lerna run lint",
+    "release": "npm-run-all lint test && lerna publish",
+    "test": "lerna run test",
+    "travis": "npm-run-all lint test"
+  }
+}
